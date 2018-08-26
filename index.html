@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="newItem" />
+        <button type="button" @click="Add()">Add</button>
+        <ul>
+            <li v-for="(item,index) in items" @click="Delete(index)">{{item}}</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+<script src="./todolist.js"></script>
+
+</html>
